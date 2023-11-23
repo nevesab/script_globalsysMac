@@ -31,7 +31,7 @@ elif [ "$arch_choice" == "2" ]; then
     
 url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.5.0&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='e0ec9158e848217ecdfc694f61789eff39fad8d367eaa86d59272739655394e2'
+token='2915fca0fcc845fdd9fed92378aac58de682ce81c6326fc973825216a8c2382b'
     file='tacticalagent-v2.5.0-darwin-arm64'
 else
     echo "Opção inválida."
