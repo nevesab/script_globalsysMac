@@ -1,8 +1,8 @@
 #!/bin/bash
 # Declarando os sites como strings no formato 'id:name'
-sites=("1:Adm/Finan" "2:Analytics" "3:Atento" "4:Box027" "5:DBA/RPA" 
-"6:Estoque" "7:Fábrica" "8:Infraestrutura" "9:Manutenção" "10:Marketing" 
-"11:Matriz" "12:Outsourcing" "13:Produtos Digitais" "14:RH")
+sites=("1:Matriz" "2:DBA/RPA" "3:Fábrica" "4:Infraestrutura" "5:Marketing" 
+"6:Estoque" "7:RH" "8:Adm/Finan" "9:Box027" "10:Analytics" 
+"11:Outsourcing" "12:Manutenção" "13:Produtos Digitais" "14:Atento")
 
 # Listando os sites
 echo "Lista de Sites:"
