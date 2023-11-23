@@ -25,7 +25,7 @@ if [ "$arch_choice" == "1" ]; then
     
 url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.5.0&arch=amd64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='42cdcdb098131498615f75781a687a97433d1b8a42efc1d17218ede222237c22'
+token='eccb7b60084f5855c343fca5a8b3d55908e7f18a43a500597fd1de226e67ebea'
     file='tacticalagent-v2.5.0-darwin-amd64'
 elif [ "$arch_choice" == "2" ]; then
     
@@ -41,7 +41,12 @@ fi
 # Executando o comando de instalação
 if curl -L -o "$file" "$url"; then
     sudo chmod +x "$file"
-    sudo ./"$file" -m install --api "https://apitactical.globalsys.com.br" --client-id 1 --site-id "$site_id" --agent-type workstation --auth "$token"
+    sudo ./"$file" -m install \
+    --api "https://apitactical.globalsys.com.br" \
+    --client-id 1 \
+    --site-id "$site_id" \
+    --agent-type workstation \
+    --auth "$token"
 else
     echo "Erro ao baixar o arquivo."
 fi
