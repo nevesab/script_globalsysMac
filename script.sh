@@ -25,13 +25,13 @@ if [ "$arch_choice" == "1" ]; then
     
 url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.1&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='eccb7b60084f5855c343fca5a8b3d55908e7f18a43a500597fd1de226e67ebea'
+token='7e8f1974f5cd9bfc3a3ba63264d627ed79f90cde46c20e5da49209f0ecdf3beb'
     file='tacticalagent-v2.5.0-darwin-amd64'
 elif [ "$arch_choice" == "2" ]; then
     
 url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.1&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='1655e54124c4ba1f5f8d66b86dc45980235015740715447f2a91b3d799e7a903'
+token='c2cf0356222a27a970bc355fb16a467baf76e5c979bbc328f1df187cc2b7624f'
     file='tacticalagent-v2.5.0-darwin-arm64'
 else
     echo "Opção inválida."
