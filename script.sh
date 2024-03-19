@@ -16,8 +16,8 @@ read -p "Insira o ID do site desejado: " site_id
 
 # Verificando a arquitetura
 echo "Selecione a arquitetura:"
-echo "1) amd64" (intel 64 bit)
-echo "2) arm64" (Apple Silicon m1,m2,m3)
+echo "1) amd64 (intel 64 bit)"
+echo "2) arm64 (Apple Silicon m1,m2,m3)"
 read -p "Escolha uma opção (1 ou 2): " arch_choice
 
 # Definindo as URLs e tokens com base na arquitetura
