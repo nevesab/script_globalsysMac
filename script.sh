@@ -16,22 +16,22 @@ read -p "Insira o ID do site desejado: " site_id
 
 # Verificando a arquitetura
 echo "Selecione a arquitetura:"
-echo "1) amd64"
-echo "2) arm64"
+echo "1) amd64" (intel 64 bit)
+echo "2) arm64" (Apple Silicon m1,m2,m3)
 read -p "Escolha uma opção (1 ou 2): " arch_choice
 
 # Definindo as URLs e tokens com base na arquitetura
 if [ "$arch_choice" == "1" ]; then
     
-url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.1&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
+url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.2&arch=amd64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='7e8f1974f5cd9bfc3a3ba63264d627ed79f90cde46c20e5da49209f0ecdf3beb'
+token='3bbe28786f070bbbe2490ca300b75d47db181e5f26a849fa480c8987e220b37e'
     file='tacticalagent-v2.5.0-darwin-amd64'
 elif [ "$arch_choice" == "2" ]; then
     
-url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.1&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
+url='https://agents.tacticalrmm.com/api/v2/agents/?version=2.6.2&arch=arm64&token=dfd43613-e70b-4d03-8259-fc5e0809d7fa&plat=darwin&api=apitactical.globalsys.com.br'
     
-token='967b06d526b24933048322ecf2c61da4de11372aff70a42eb4e2ce105f03f23f'
+token='2f90e70e379da9739ecfba60368e81ab9d332cd0ea1072ccfbbfac57407fa19d'
     file='tacticalagent-v2.5.0-darwin-arm64'
 else
     echo "Opção inválida."
